@@ -69,9 +69,14 @@ block content
                 .logo SHOP MINI
     .container
         .row
-            .cart-block
+            .cart-block.order-block
                 .col-xs-12
-                    h2 Giỏ Hàng
+                    h2 Theo Dõi Đơn Hàng
+                    input(type="text", placeholder="Mã đơn hàng")
+                    button.btn.btn-default(type="submit") Tra cứu
+                    .desc
+                        span Số đơn hàng: asdasd
+                        span Trạng thái: Đang giao hàng
                 .col-xs-12
                     .cart
                         table
@@ -88,8 +93,6 @@ block content
                                 td 
                                     input(type="number", value="1")
                                 td Thành Tiền
-                                td 
-                                    button.btn.btn-default Cập Nhật
                             tr
                                 td 2
                                 td Áo Thun Nam
@@ -97,8 +100,6 @@ block content
                                 td 
                                     input(type="number", value="1")
                                 td Thành Tiền
-                                td 
-                                    button.btn.btn-default Cập Nhật
                             tr
                                 td 3
                                 td Áo Thun Nam
@@ -106,28 +107,26 @@ block content
                                 td 
                                     input(type="number", value="1")
                                 td Thành Tiền
-                                td 
-                                    button.btn.btn-default Cập Nhật
                         .total asd
-    .container
-        .row
-            .user-block
-                .col-xs-12
-                    h3 Thông Tin Giao Hàng
-                    form.form-order(data-parsley-validate)
-                        .form-group
-                            input#name.form-control(type='text', placeholder="Tên người nhận*", name="fullname", required)
-                        .form-group
-                            input#address.form-control.address(type='text', placeholder="Địa chỉ người nhận*", required)
-                            label Thành Phố
-                        .form-group
-                            input#phone.form-control(type='text', placeholder="Điện thoại người nhận*", required)
-                        .form-group
-                            input#email.form-control(type='text', placeholder="Email người nhận*", required )
-                        .form-group
-                            textarea#desc.form-control(type='text', placeholder="Ghi chú")
-                        .form-group
-                        button.btn.btn-default(type='submit') Đặt Hàng
+    //- .container
+    //-     .row
+    //-         .user-block
+    //-             .col-xs-12
+    //-                 h3 Thông Tin Giao Hàng
+    //-                 form(data-parsley-validate)
+    //-                     .form-group
+    //-                         input#name.form-control(type='text', placeholder="Tên người nhận*", name="fullname", required)
+    //-                     .form-group
+    //-                         input#address.form-control.address(type='text', placeholder="Địa chỉ người nhận*", required)
+    //-                         label Thành Phố
+    //-                     .form-group
+    //-                         input#phone.form-control(type='text', placeholder="Điện thoại người nhận*", required)
+    //-                     .form-group
+    //-                         input#email.form-control(type='text', placeholder="Email người nhận*", required )
+    //-                     .form-group
+    //-                         textarea#desc.form-control(type='text', placeholder="Ghi chú")
+    //-                     .form-group
+    //-                     button.btn.btn-default(type='submit') Đặt Hàng
 
 
     footer

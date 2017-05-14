@@ -1,0 +1,45 @@
+extends layout/layout
+
+block var
+  - var subPage = "admin";
+
+block content
+  nav.navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        a.navbar-brand(href='#') Xin chào: Admin
+      
+      // /.nav-collapse
+  #exTab1.container-fluid
+    ul.nav.nav-pills
+      li.active
+        a(href='#1a', data-toggle='tab') Danh Mục
+      li
+        a(href='#2a', data-toggle='tab') Danh Sách Sản Phẩm
+      li
+        a(href='#3a', data-toggle='tab') Kiểm Tra Đơn Hàng
+      li
+        a(href='#4a', data-toggle='tab') Background color
+    .tab-content.clearfix
+      #1a.tab-pane.active
+        h3 Danh Mục
+        table
+          tr
+              th ID
+              th Tên Danh Mục
+          tr
+              td 1
+              td Áo Thun Nam
+          tr
+              td 2
+              td Áo Thun Nam
+          tr
+              td 3
+              td Áo Thun Nam
+      #2a.tab-pane
+        h3 Danh Sách Sản Phẩm
+      #3a.tab-pane
+        h3 Đợn Hàng
+      #4a.tab-pane
+        h3 We use css to change the background color of the content to be equal to the tab
+
