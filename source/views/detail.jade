@@ -1,0 +1,145 @@
+extends layout/layout
+
+block var
+
+block content
+    .banner
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          //- a.navbar-brand(href='#') Project name
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Trang Chủ
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Sản Phẩm 
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider(role='separator')
+                li.dropdown-header Nav header
+                li
+                  a(href='#') Separated link
+                li
+                  a(href='#') One more separated link
+            li
+              a(href='#contact') Khuyến Mãi
+            li
+              a(href='#contact') Hướng Dẫn Mua Hàng
+            li
+              a(href='#contact') Đơn Hàng
+            li
+              a(href='#contact') Liên Hệ
+          .nav.navbar-nav.navbar-right
+            .icon-cart
+                img(src="../images/empty-cart-light.png");
+        // /.nav-collapse
+    .container
+        .row
+            .slider-block
+                .slider.autoplay
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                    .slider-item
+                        img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg")
+                .logo SHOP MINI
+    .container
+        .row
+            .content-block
+                .col-xs-12
+                    h3 Thông Tin Sản Phẩm
+                .col-xs-12.col-sm-4.col-md-4
+                    img(src="http://lorempixel.com/output/food-q-c-375-375-1.jpg")
+                    .thumb
+                        img(src="http://lorempixel.com/output/food-q-c-46-46-2.jpg")
+                        img(src="http://lorempixel.com/output/food-q-c-46-46-2.jpg")
+                        img(src="http://lorempixel.com/output/food-q-c-46-46-2.jpg")
+                        img(src="http://lorempixel.com/output/food-q-c-46-46-2.jpg")
+                        img(src="http://lorempixel.com/output/food-q-c-46-46-2.jpg")
+
+                .col-xs-12.col-sm-8.col-md-8
+                    .desc
+                        span
+                            strong Tên Sản Phẩm: 
+                            |   Bẹo Bibica
+                        span 
+                            strong Giá: 
+                            |   100.000vnd
+                        span 
+                            strong Thông Tin:  
+                            |   is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                        button.btn.btn-default Them Vào Giỏ
+                        select
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+                            option 6
+                            option 7
+    .container
+        .row
+            .product-block.grid-items
+                .col-xs-12
+                    h3 Sản phẩm quan tâm
+                .col-xs-12.col-sm-6.col-md-3
+                    .item
+                        a(href="#", title="")
+                            img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg");
+                            .detail
+                                span Ten san pham
+                                span 100.000 vnd
+                .col-xs-12.col-sm-6.col-md-3
+                    .item
+                        a(href="#", title="")
+                            img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg");
+                            .detail
+                                span Ten san pham
+                                span 100.000 vnd
+                .col-xs-12.col-sm-6.col-md-3
+                    .item
+                        a(href="#", title="")
+                            img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg");
+                            .detail
+                                span Ten san pham
+                                span 100.000 vnd
+                                span 80.000 - save 20%
+                .col-xs-12.col-sm-6.col-md-3
+                    .item
+                        a(href="#", title="")
+                            img(src="http://lorempixel.com/output/food-q-c-300-150-8.jpg");
+                            .detail
+                                span Ten san pham
+                                span 100.000 vnd
+
+    footer
+        .footer
+            a(href="#", title="facebook") Facebook
+            span.name Shop Mini
+            .location
+                span Địa chỉ của shop - 
+                span Số điện thoại

@@ -1,0 +1,13 @@
+{
+  "name": "my-project-name",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~1.0.2",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-jade": "~0.4.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~0.4.0"
+  }
+}

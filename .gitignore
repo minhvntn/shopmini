@@ -1,0 +1,3 @@
+node_modules/.bin/cake.cmd
+node_modules/
+public/
