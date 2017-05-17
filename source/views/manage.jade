@@ -7,8 +7,11 @@ block content
   nav.navbar.navbar-default.navbar-fixed-top
     .container
       .navbar-header
-        a.navbar-brand(href='#') Xin chào: Admin
-      
+        a.navbar-brand(href='#') logo
+      #navbar.navbar-collapse.collapse
+        .nav.navbar-nav.navbar-right
+          span Xin chào: Admin
+
       // /.nav-collapse
   #exTab1.container-fluid
     ul.nav.nav-pills
@@ -38,24 +41,32 @@ block content
               td Đã kích hoạt
               td 
                 button.btn.btn-default Ẩn
+              td 
+                button.btn.btn-default Edit
           tr
               td 2
               td Áo Thun Nam
               td Đã kích hoạt
               td 
                 button.btn.btn-default Ẩn
+              td 
+                button.btn.btn-default Edit
           tr
               td 3
               td Áo Thun Nam
               td Đã kích hoạt
               td 
                 button.btn.btn-default Ẩn
+              td 
+                button.btn.btn-default Edit
           tr
               td 1
               td Áo Thun Nam
               td Chưa kích hoạt
               td 
                 button.btn.btn-default Bật
+              td 
+                button.btn.btn-default Edit
       #2a.tab-pane
         h3 Danh Sách Sản Phẩm
         table
